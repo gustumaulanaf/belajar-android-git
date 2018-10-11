@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amikom.simpleapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/hello"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/hello"
+            android:textColor="@color/colorPrimary"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <Button
+            android:id="@+id/tambahuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD USER"
+            android:onClick="adduser"/>
+        <Button
+            android:id="@+id/daftaruser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List User"
+            android:onClick="listuser"/>
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go To Fragment"
+            android:onClick="kefragment"/>
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go to Activity"
+            android:onClick="pindah"/>
+    </LinearLayout>
+</RelativeLayout>
