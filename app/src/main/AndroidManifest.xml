@@ -16,11 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".FragmentActivity" />
-        <activity android:name=".SplashActivity" />
-
+        <activity android:name=".activity.AddUserActivity" />
+        <activity android:name=".activity.DetailActivity" />
+        <activity android:name=".SplashActivity"></activity>
     </application>
 
 </manifest>

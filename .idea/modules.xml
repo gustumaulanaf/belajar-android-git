@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://E:\Android\GustuNew\belajar-android-git\MobileProgrammingII.iml" filepath="E:\Android\GustuNew\belajar-android-git\MobileProgrammingII.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://E:\Android\GustuNew\belajar-android-git\app\app.iml" filepath="E:\Android\GustuNew\belajar-android-git\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/belajar-android-git.iml" filepath="$PROJECT_DIR$/belajar-android-git.iml" />
     </modules>
   </component>
