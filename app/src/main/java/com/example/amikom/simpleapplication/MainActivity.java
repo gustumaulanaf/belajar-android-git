@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.amikom.simpleapplication.activity.AddUserActivity;
+import com.example.amikom.simpleapplication.activity.DetailActivity;
+
 import layout.BlankFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,8 +35,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void adduser(View view) {
+        Intent intent = new Intent(MainActivity.this, AddUserActivity.class);
+        startActivity(intent);
     }
 
     public void listuser(View view) {
+        Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+        startActivity(intent);
     }
 }
