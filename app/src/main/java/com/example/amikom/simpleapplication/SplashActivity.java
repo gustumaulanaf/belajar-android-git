@@ -15,12 +15,15 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         instance = PreferencesHelper.getInstance(getApplicationContext());
         int splashInterval = 10;
-        new Handler().postDelayed(() -> {
-            if (!instance.isLogin()) {
-                startActivity(new Intent(SplashActivity.this, LoginActivity.class));
-            } else {
-                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (!instance.isLogin()){
+                    startActivity(new Intent(SplashActivity.this,LoginActivity.class));
+                }else {
+                    startActivity(new Intent(SplashActivity.this,MainActivity.class));
+                }
             }
-        }, splashInterval);
+        },splashInterval);
     }
 }
